@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+
+    <link href="./output.css" rel="stylesheet">
+
+    <!-- Font-awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <a href="/" class="flex items-center justify-center">
+        <img class="nav-logo z-10" src="assets/svg/main_logo.svg" class="h-8" alt="Logo" />
+    </a>
+
+    <!-- Search Modal -->
+    <div id="search-modal" class="z-50 fixed inset-0 bg-gray-800 bg-opacity-75 hidden flex items-center justify-center">
+        <div class="bg-white p-6 rounded-lg w-3/4 max-w-lg">
+            <div class="flex justify-between items-center">
+                <h2 class="text-xl font-bold">Search</h2>
+                <button id="close-modal" class="text-gray-600 hover:text-gray-900">&times;</button>
+            </div>
+            <input type="text" id="search-input" placeholder="Type to search for sections..."
+                class="w-full mt-4 p-2 border border-gray-300 rounded">
+            <div id="search-results" class="mt-4"></div>
+        </div>
+    </div>
+
+    <nav class="fixed w-full bg-white border-gray-200 temp:bg-gray-900">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
+
+            <button type="button" id="search-btn" style="outline: none !important; border: none !important;"
+                class="temp:text-gray-400 hover:bg-secondary temp:hover:bg-gray-700 rounded-lg text-sm p-2.5 me-1">
+                <svg class="text-white w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 20 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                </svg>
+            </button>
+
+            <button data-collapse-toggle="navbar-search" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden hover:bg-secondary temp:text-gray-400 temp:hover:bg-gray-700 temp:focus:ring-gray-600"
+                aria-controls="navbar-search" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="text-white w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+
+            <div class="nav-pages-div items-center justify-between hidden w-full md:flex md:w-auto md:order-1 mobile:pt-6"
+                id="navbar-search">
+                <ul
+                    class="nav-pages flex flex-col p-4 md:p-0 mt-4 font-medium border mobile:bg-white border-gray-100 rounded-lg md:space-x-0 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+                    <li>
+                        <a href="/"
+                            class="md:mr-2 block mb-1 py-1 px-4 text-white mobile:text-black rounded md:temp:text-blue-500 hover:bg-secondary"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html"
+                            class="md:mr-2 block mobile:mb-1 py-1 px-4 text-white mobile:text-black rounded hover:bg-secondary">About
+                            Us</a>
+                    </li>
+                    <li>
+                        <a href="products.html"
+                            class="md:mr-2 block mobile:mb-1 py-1 px-4 text-white mobile:text-black rounded hover:bg-secondary">Products</a>
+                    </li>
+                    <li>
+                        <a href="contact.html"
+                            class="md:mr-2 block mobile:mb-1 py-1 px-4 text-white mobile:text-black bg-secondary rounded hover:bg-secondary">Contact
+                            Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="h-48 w-full bg-[#e6e4e4]">
+        <div class="mx-auto w-full max-w-screen-xl pl-5">
+            <h1 class="pt-24 text-3xl font-bold text-secondary">Contact us</h1>
+            <div class="flex items-baseline justify-between text-white w-52 pt-3">
+                <a href="index.html" class="text-primary">
+                    <i class="fa-solid fa-house"></i> Home
+                </a>
+                <i class="fa-solid fa-angles-right text-secondary"></i>
+                <p class="text-primary">
+                    <i class="fa-solid fa-user"></i> Contact us
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="contact" class="mb-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col justify-center items-center w-full mt-16">
+                <h1 class="pt-10 text-4xl lg:text-6xl font-bold text-secondary">Contact
+                    <span class="text-primary">Us</span>
+                </h1>
+                <div class="w-16 h-2 bg-primary mt-4"></div>
+            </div>
+            <div class="container flex justify-around items-center max-w-screen-xl w-full p-6">
+                <div class="h-full mobile:hidden">
+                    <img src="assets/img/download (3).png" width="500" alt="Contact Image">
+                </div>
+                <div class="w-2/5 mobile:w-full text-xl">
+                    <form class="flex flex-col">
+
+                        <div class="mb-4">
+                            <label for="name" class="block text-lg font-medium text-gray-900 temp:text-white">Your
+                                Name<span class="text-red-600">*</span></label>
+                            <input type="text" id="name"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 temp:bg-gray-700 temp:border-gray-600 temp:placeholder-gray-400 temp:text-white temp:focus:ring-blue-500 temp:focus:border-blue-500"
+                                placeholder="Please enter your full name." required />
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-lg font-medium text-gray-900 temp:text-white">Your
+                                Phone Number<span class="text-red-600">*</span></label>
+                            <input type="email" id="email"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 temp:bg-gray-700 temp:border-gray-600 temp:placeholder-gray-400 temp:text-white temp:focus:ring-blue-500 temp:focus:border-blue-500"
+                                placeholder="Provide your phone number." required />
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-lg font-medium text-gray-900 temp:text-white">Your
+                                Email</label>
+                            <input type="email" id="email"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 temp:bg-gray-700 temp:border-gray-600 temp:placeholder-gray-400 temp:text-white temp:focus:ring-blue-500 temp:focus:border-blue-500"
+                                placeholder="Enter your email address." required />
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="message" class="block text-lg font-medium text-gray-900 temp:text-white">Your
+                                Message<span class="text-red-600">*</span></label>
+                            <textarea id="message" rows="4"
+                                class="block w-full text-lg text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 temp:bg-gray-700 temp:border-gray-600 temp:placeholder-gray-400 temp:text-white temp:focus:ring-blue-500 temp:focus:border-blue-500"
+                                placeholder="Leave your message here."></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="rounded-lg bg-primary text-white text-xl font-medium px-4 py-2 shadow-md">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="relative bg-primary text-white temp:bg-gray-900">
+        <button onclick="gotoTop()" class="gotoTop h-12 w-12 absolute rounded-lg">
+            <i class="fa-solid fa-angle-up"></i>
+        </button>
+        <a href="#" class="hidden absolute left-1/2 transform -translate-x-1/2 top-[-19px] mobile:flex items-center">
+            <span class="self-center mobile:text-4xl font-semibold whitespace-nowrap text-secondary">
+                <b>
+                    <span id="footer-name">SHIVNERI FOODS</span>
+                </b>
+            </span>
+        </a>
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+            <div class="md:flex md:justify-between">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="mobile:hidden flex items-center">
+                        <span class="self-center text-2xl font-semibold whitespace-nowrap text-secondary">
+                            <b>
+                                SHIVNERI FOODS
+                            </b>
+                        </span>
+                    </a>
+                    <p class="max-w-lg pt-3 mobile:pt-7">
+                        We are Pune-based SHIVNERI FOODS, dedicated to bringing you the finest quality food products.
+                        Our commitment to
+                        excellence ensures that every item we offer meets the highest standards of taste and freshness.
+                    </p>
+                    <a href="#"
+                        class="w-[200px] mt-6 flex flex-col items-center justify-start bg-white text-secondary rounded-lg">
+
+                        <p><b>RATE US ON GOOGLE</b></p>
+
+                        <div class="star">
+                            <div class="flex items-center mb-1 text-primary">
+                                <svg class="w-5 h-5 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-5 h-5 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-5 h-5 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-5 h-5 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                    <div>
+                        <h2 class="mb-6 text-base font-semibold text-secondary uppercase temp:text-white"><b>Useful
+                                Links</b></h2>
+                        <ul class="text-white temp:text-gray-400 font-medium">
+                            <li class="pb-2">
+                                <a href="privacy_policy.html" class="hover:underline">Privacy Policy</a>
+                            </li>
+                            <li class="pb-2">
+                                <a href="refund_policy.html" class="hover:underline">Refund Policy</a>
+                            </li>
+                            <li class="pb-2">
+                                <a href="terms_conditions.html" class="hover:underline">Terms & Conditions</a>
+                            </li>
+                            <li class="pb-2">
+                                <a href="shipping_policy.html" class="hover:underline">Shipping Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-base font-semibold text-secondary uppercase temp:text-white"><b>We are
+                                on</b></h2>
+                        <ul class="text-white temp:text-gray-400 font-medium">
+                            <li class="pb-2">
+                                <a href="#" class="hover:underline">Amazon</a>
+                            </li>
+                            <li class="pb-2">
+                                <a href="#" class="hover:underline">Flipkart</a>
+                            </li>
+                            <li class="pb-2">
+                                <a href="#" class="hover:underline">Google</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mobile:hidden">
+                        <h2 class="mb-6 text-base font-semibold text-secondary uppercase temp:text-white"><b>Contact</b>
+                        </h2>
+                        <ul class="text-white temp:text-gray-400 font-medium">
+                            <li class="pb-2">
+                                <a href="#" class="hover:underline"><i class="fa-solid fa-house"></i> &nbsp;Pune,
+                                    Maharashtra, India</a>
+                            </li>
+                            <li class="pb-2">
+                                <a href="#" class="hover:underline"><i class="fa-solid fa-envelope"></i>
+                                    &nbsp;hello@skajimuddin.com</a>
+                            </li>
+                            <li class="pb-2">
+                                <a href="#" class="hover:underline"><i class="fa-solid fa-phone"></i> &nbsp;+91 911 777
+                                    9119</a>
+                            </li>
+                            <li class="mt-2">
+                                <div class="flex mt-4 sm:justify-start sm:mt-0">
+                                    <div class="w-7"></div>
+                                    <a href="#" class="text-white hover:text-gray-900 temp:hover:text-white">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </a>
+                                    <a href="#" class="text-white hover:text-gray-900 temp:hover:text-white ms-5">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                    <a href="#" class="text-white hover:text-gray-900 temp:hover:text-white ms-5">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                    <a href="#" class="text-white hover:text-gray-900 temp:hover:text-white ms-5">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden mobile:block mt-4">
+                <h2 class="mb-6 text-base font-semibold text-secondary uppercase temp:text-white"><b>Contact</b>
+                </h2>
+                <ul class="text-white temp:text-gray-400 font-medium">
+                    <li class="pb-2">
+                        <a href="#" class="hover:underline"><i class="fa-solid fa-house"></i> &nbsp;Pune,
+                            Maharashtra, India</a>
+                    </li>
+                    <li class="pb-2">
+                        <a href="#" class="hover:underline"><i class="fa-solid fa-envelope"></i>
+                            &nbsp;hello@skajimuddin.com</a>
+                    </li>
+                    <li class="pb-2">
+                        <a href="#" class="hover:underline"><i class="fa-solid fa-phone"></i> &nbsp;+91 911 777 9119</a>
+                    </li>
+                    <li>
+                        <div class="flex mt-4 sm:justify-start sm:mt-0">
+                            <div class="w-7"></div>
+                            <a href="#" class="text-white hover:text-gray-900 temp:hover:text-white">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="#" class="text-white hover:text-gray-900 temp:hover:text-white ms-5">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="text-white hover:text-gray-900 temp:hover:text-white ms-5">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="#" class="text-white hover:text-gray-900 temp:hover:text-white ms-5">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto temp:border-gray-700 lg:my-8" />
+            <div class="sm:flex sm:items-center sm:justify-center">
+                <span class="text-sm text-white sm:text-center temp:text-gray-400">
+                    © 2024
+                    <a href="#" class="hover:underline">SHIVNERI FOODS</a>
+                    All Rights Reserved. <br class="hidden mobile:block"> <span class="mobile:hidden">|</span> Designed
+                    and developed by
+                    <a href="http://skajimuddin.com/" class="hover:underline"><b>skajimuddin.com</b></a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

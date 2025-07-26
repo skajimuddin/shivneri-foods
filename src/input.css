@@ -1,0 +1,486 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --color-primary: #f4a42d;
+    --color-secondary: #963017;
+}
+
+::selection {
+    color: var(--color-primary) !important;
+    background: var(--color-secondary) !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#floating {
+    position: fixed;
+    bottom: 55px;
+    right: 20px;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+@media(max-width: 820px) {
+    #floating {
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+#floating #whatsapp {
+    background-color: #25d366;
+    color: white;
+    border: transparent;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    font-size: 33px;
+    margin-top: 10px;
+}
+
+nav {
+    background-color: var(--color-primary) !important;
+    z-index: 999;
+}
+
+.nav-logo {
+    position: fixed;
+    height: 85px;
+    top: 10px;
+    z-index: 1000;
+}
+
+.nav-ul {
+    height: 2.85rem;
+    width: 18.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section {
+    height: 45rem;
+}
+
+.hero-txt-div {
+    width: 50%;
+    padding-left: 30px;
+}
+
+.hero-img-div {
+    width: 50%;
+    height: 500px;
+    border-radius: 30px;
+    /* height: 100%; */
+    margin-top: 100px;
+    /* margin-left: 100px; */
+    /* background-image: url("assets/img/hero.png");
+    background-size: cover; 
+    background-position: center; */
+}
+
+@media (min-width: 821px) and (max-width: 1125px) {
+    .hero-img-div {
+        margin-top: 0px;
+    }
+}
+
+@media (min-width: 821px) and (max-width: 1023px) {
+    .hero-img-div img {
+        height: 480px;
+    }
+}
+
+.hero-p {
+    color: gray;
+    padding-right: 100px;
+    margin-top: 30px;
+}
+
+#hero2-section {
+    display: none;
+}
+
+@media (max-width: 820px) {
+    .nav-logo {
+        height: 70px !important;
+    }
+
+    .hero-mobile-img {
+        border-radius: 20px;
+        width: 85%;
+    }
+
+    #hero1-section {
+        display: none;
+    }
+
+    #hero2-section {
+        padding-top: 70px;
+        display: block;
+    }
+
+    .mobile-hero-parent-div h1 {
+        text-align: center;
+    }
+
+    .mobile-hero-parent-div p {
+        /* text-align: center !important; */
+    }
+}
+
+/* Telp */
+
+/* .parent-div {
+    height: 700px;
+    margin-left: 46px;
+    width: 700px;
+}
+
+.div {
+    height: 33%;
+    width: 33%;
+    margin: 1px;
+    background-color: yellowgreen;
+} */
+
+/* .choose-us-div1 {
+    height: 600px;
+    width: 55%;
+}
+
+.choose-us-div1 .left-img {
+    width: 50%;
+}
+
+.choose-us-div1 .image-div {
+    height: 100%;
+    width: 50%;
+    background-image: url("https://img.freepik.com/premium-vector/chef-man-cooking-delicious-food-vector-illustration-isolated-white-background_622933-221.jpg?w=740");
+    background-size: cover;
+    background-position: center;
+}
+
+.choose-us-div1 .div {
+    height: 200px;
+    width: 200px;
+    background-color: gray;
+    margin: 5px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.choose-us-div2 {
+    height: 500px;
+    width: 45%;
+} */
+
+/* Why to choose us section */
+#choose-parent-box1 {
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+.chef-png {
+    position: absolute;
+    width: 395px;
+    height: 395px;
+    transform: translate(122.4px, 139.2px);
+    left: 100px;
+    top: -60px;
+}
+
+@media (min-width: 821px) and (max-width: 1111px) {
+    .chef-png {
+        width: 275px;
+        height: 275px;
+        transform: translate(122.4px, 263.2px);
+        left: 83px;
+        top: -103px;
+    }
+
+    #yellow {
+        left: 246px;
+        top: -10px;
+    }
+
+    #green {
+        left: 63px;
+        top: 67px;
+    }
+
+    #purple {
+        left: 25px;
+        top: 210px;
+    }
+
+    #blue {
+        left: 66px;
+        top: 350px;
+    }
+
+    #red {
+        left: 265px;
+        top: 410px;
+        transition: none;
+        cursor: move;
+    }
+}
+
+.chef-icon {
+    font-size: 2rem;
+    color: var(--color-primary);
+}
+
+.chef-hading {
+    padding-top: 2px;
+    font-size: 1.3rem;
+}
+
+#bigGrayOne {
+    /* border-radius: 100%; */
+    /* position: absolute; */
+    /* right: 0px; */
+    /* right: 0px;
+    top: 0px;
+    margin-left: 200px; */
+}
+
+/* #bigGrayOne:after {
+    border-radius: 100%;
+    position: absolute;
+    width: 168px;
+    height: 168px;
+    border: 1px solid #E9E9E9;
+    content: "";
+    z-index: 1;
+    top: -10px;
+    left: -10px;
+} */
+
+#yellow,
+#green,
+#purple,
+#blue,
+#red,
+#blue2 {
+    width: 200px;
+    height: 170px;
+    position: absolute;
+    color: black;
+    /* background-color: var(--color-secondary); */
+    /* border: 3px solid var(--color-primary); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#yellow {
+    /* background-color: #E2A213; */
+    /* top: 1px;
+    left: 256px; */
+    left: 325px;
+    top: -80px;
+}
+
+#green {
+    /* background-color: #00A19A; */
+    /* top: 40px;
+    left: 105px; */
+    left: 125px;
+    top: 28px;
+}
+
+#purple {
+    /* background-color: #D63080; */
+    /* top: 173px;
+    left: 19px; */
+    left: 22px;
+    top: 197px;
+}
+
+#blue {
+    /* background-color: #173DC6; */
+    /* top: 305px;
+    left: 106px; */
+    left: 125px;
+    top: 365px;
+}
+
+#red {
+    /* background-color: #e05016; */
+    /* right: 0; */
+    /* top: 350px;
+    left: 256px; */
+    left: 325px;
+    top: 440px;
+}
+
+.choose-parent-box2 {
+    width: 50%;
+    height: 500px;
+}
+
+@media (max-width: 820px) {
+    .chef-png {
+        position: absolute;
+        left: -72px;
+        top: -33px;
+        height: 240px;
+        width: 240px;
+    }
+
+    .choose-section-parent {
+        flex-direction: column;
+    }
+
+    #choose-parent-box1 {
+        max-width: 380px;
+        height: 500px;
+        position: relative;
+        text-align: center;
+    }
+
+    #yellow,
+    #green,
+    #purple,
+    #blue,
+    #red,
+    #blue2 {
+        width: 130px;
+    }
+
+    #yellow {
+        /* left: 253px; */
+        /* right: 10px; */
+        top: -45px;
+        left: calc(100% - 140px);
+    }
+
+    #green {
+        top: -45px;
+        left: 10px;
+    }
+
+    #purple {
+        top: 300px;
+        left: 10px;
+    }
+
+    #blue {
+        display: none !important;
+        top: 120px;
+        left: calc(100% - 140px);
+    }
+
+    #red {
+        top: 300px;
+        left: calc(100% - 140px);
+    }
+
+    .choose-parent-box2 {
+        width: 100%;
+        padding: 16px;
+        text-align: center;
+    }
+
+    .why-us-p {
+        padding: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    .why-us-h1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.product-card {
+    max-width: 380px;
+}
+
+@media (max-width: 820px) {
+    .product-card {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 931px) {
+    .nav-pages {
+        background-color: transparent !important;
+        /* color: white !important; */
+    }
+
+    .nav-pages-div {
+        padding: 0px !important;
+    }
+
+    .nav-pages li a {
+        padding: 4px 10px !important;
+        color: white !important;
+    }
+}
+
+@media(max-width: 1023px) {
+    .hero-p {
+        padding-right: 0px;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 820px) {
+    div.container.mx-auto.h-full {
+        width: 100% !important;
+        margin: 0;
+        padding: 0;
+    }
+
+    div.mobile-hero-parent-div.container {
+        width: 100% !important;
+    }
+
+    img.hero-mobile-img.h-56.object-cover {
+        width: 100% !important;
+    }
+}
+
+/* Responsive */
+@media (max-width: 820px) {}
+
+body {
+    overflow-x: hidden;
+}
+
+#footer-name {
+    background-color: var(--color-primary);
+    border: 4px solid white;
+    border-radius: 10px;
+    padding: 0 8px;
+    letter-spacing: 2.5px;
+}
+
+.gotoTop {
+    top: 24px;
+    right: 20px;
+    font-size: 1.3rem;
+    color: black;
+    background-color: #ffffff;
+}
+
+@media (max-width: 820px) {
+    .gotoTop {
+        top: auto;
+        bottom: 110px !important;
+    }
+}
